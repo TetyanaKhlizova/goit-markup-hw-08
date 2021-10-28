@@ -37,7 +37,12 @@
             </svg>+38 096 111 11 11</a></li>
         </ul>
         </div>
-    </div>
+        <!--<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8 14.667V12h24v2.667H8Zm0 6.666h24v-2.666H8v2.666ZM8 28h24v-2.667H8V28Z" fill="#000" />
+            </svg> </button>-->
+    </div>   
     </header>
     <!--Уникальный контент страницы-->
 <main>
@@ -77,7 +82,7 @@
                     </svg>
                 </div>
                 <h3 class="peculiarities-set__subtitle">Планирование</h3>
-                <p class="peculiarities-sub__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                <p class="peculiarities-set__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
             <li class="peculiarities-set__item">
                 <div class="peculiarities-set__img">
@@ -97,7 +102,7 @@
         <ul class="activity-set list">
             <li class="activity-set__item">
                 <div class="activity-set__wrapper">
-                <img src="./images/box1.jpg" alt="Печать" width="370">
+                <img  src="./images/box1.jpg" alt="Печать" width="370">
                 <p class="activity-set__text">Десктопные приложения</p>
                 </div>
             </li>
@@ -354,6 +359,16 @@
             </div>
         </div>
     </footer>
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M29.667 12.88 27.787 11l-7.454 7.453L12.88 11 11 12.88l7.453 7.453L11 27.787l1.88 1.88 7.453-7.454 7.454 7.454 1.88-1.88-7.454-7.454 7.454-7.453Z"
+                fill="#212121" />
+        </svg>
+    </button>
+
  <div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button type="button" class="modal__close-btn" data-modal-close><svg class="modal__close-btn_svg"><use href="./images/sprite.svg#icon-close"></use></svg>  </button>  
@@ -396,5 +411,9 @@
 </div>   
  </div>
 <script src="./js/modal.js"></script>
+<!--<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script defer src="./js/mobile-menu.js"></script>-->
 </body>
 </html>

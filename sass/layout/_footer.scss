@@ -64,23 +64,23 @@
   color: var(--title-color);
   margin: 0 0 20px 0;
 }
-.contact-section-footer-general {
+/*.contact-section-footer-general {
   display: flex;
   align-items: baseline;
 }
 .contact-section-footer {
   width: 231px;
   margin-right: 70px;
-}
+}*/
 .join-section {
   width: 206px;
   margin: 0;
 }
-.subscription-section {
+/*.subscription-section {
   margin-left: auto;
-}
+}*/
 .subscription-form__btn {
-  display: flex;
+  // display: flex;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 10px 28px;
   margin-left: 12px;
@@ -97,7 +97,7 @@
   margin-left: 10px;
 }
 .subscription-form {
-  display: flex;
+  //display: flex;
 }
 
 .subscription-form__field {

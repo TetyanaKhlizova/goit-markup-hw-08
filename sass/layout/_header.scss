@@ -23,10 +23,17 @@
   }
 }
 
+.navi,
+.header-contact {
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+
 .navi__active,
 .contact-header-link {
-  display: flex;
-  align-items: center;
+  /*display: flex;
+  align-items: center;*/
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -61,7 +68,7 @@
 .logo-header {
   padding-top: 24px;
   padding-bottom: 24px;
-  margin-right: 93px;
+  /*margin-right: 93px;*/
 }
 .contact-header-link {
   color: var(--secondary-color);
@@ -71,13 +78,13 @@
   }
 }
 
-.header-container {
+/*.header-container {
   display: flex;
   align-items: center;
 }
 .header-nav {
   display: flex;
-  /*align-items: center;*/
+  align-items: center;
 }
 .navi {
   display: flex;
@@ -96,7 +103,7 @@
 }
 .header-contact-list {
   display: flex;
-}
+}*/
 .contact-header-link__icon-envelope {
   width: 16px;
   height: 12px;
@@ -110,7 +117,9 @@
   margin-right: 10px;
   fill: currentColor;
 }
-/*.contact-header-link__icon-envelope,
+
+/* это не нужно
+.contact-header-link__icon-envelope,
 .contact-header-link__icon-smartphone {
   fill: currentColor;
 }*/
