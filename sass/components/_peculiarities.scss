@@ -1,0 +1,43 @@
+/* peculiarities section*/
+
+.peculiarities-set__img {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bkground-color-teamandbtn);
+  border-radius: 4px;
+  margin-bottom: var(--card-set-gap);
+}
+.peculiarities-set__icon {
+  width: 70px;
+  height: 70px;
+}
+.peculiarities-set__subtitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.peculiarities-set__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--secondary-color);
+}
+.peculiarities-set {
+  display: flex;
+  margin-right: calc(-1 * var(--card-set-gap));
+}
+.peculiarities-set {
+  .peculiarities-set__item {
+    flex-basis: calc(100% / 4 - var(--card-set-gap));
+    margin-right: var(--card-set-gap);
+  }
+}

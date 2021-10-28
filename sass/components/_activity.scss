@@ -1,0 +1,48 @@
+/* activity section*/
+
+.section-activity {
+  padding-bottom: 94px;
+}
+
+.section-activity__title,
+.team-section__title,
+.section-customers__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--primary-color);
+  text-align: center;
+}
+.activity-set {
+  display: flex;
+  margin-right: calc(-1 * var(--card-set-gap));
+}
+.activity-set {
+  .activity-set__item {
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+    margin-right: var(--card-set-gap);
+  }
+}
+.activity-set__wrapper {
+  position: relative;
+}
+
+.activity-set__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 70px;
+  width: 100%;
+}

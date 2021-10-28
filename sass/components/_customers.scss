@@ -1,0 +1,43 @@
+/* regular customers section*/
+
+.section-customers__list {
+  display: flex;
+  justify-content: center;
+  margin-right: calc(-1 * var(--card-set-gap));
+}
+.section-customers__list {
+  .section-customers__item {
+    flex-basis: calc(100% / 6 - var(--card-set-gap));
+    margin-right: var(--card-set-gap);
+  }
+}
+.section-customers__item {
+  width: 170px;
+  height: 92px;
+}
+.customers {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--social-icon-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border var(--trans-duration) var(--transit-tim-function);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+.customers__icon_hover {
+  transition: fill var(--trans-duration) var(--transit-tim-function);
+  .customers:hover &,
+  .customers:focus & {
+    fill: var(--accent-color);
+  }
+}
+.customers__icon {
+  width: 106px;
+  height: 60px;
+  fill: var(--social-icon-color);
+}

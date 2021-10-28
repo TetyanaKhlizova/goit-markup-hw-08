@@ -1,0 +1,116 @@
+/* header section*/
+
+.page-header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--header-line-color);
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--accent-color);
+}
+
+.logo-header__studio {
+  color: var(--logo-header-color);
+  transition: color var(--trans-duration) var(--transit-tim-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.navi__active,
+.contact-header-link {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color var(--trans-duration) var(--transit-tim-function);
+}
+.navi__active:hover,
+.navi__active:focus,
+.navi .navi__stud.current,
+.navi .navi__port-port.current {
+  color: var(--accent-color);
+}
+.navi__item > .current::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  display: block;
+  bottom: -1px;
+}
+.navi__stud,
+.navi__port-port {
+  position: relative;
+}
+
+.logo-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
+}
+.contact-header-link {
+  color: var(--secondary-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  /*align-items: center;*/
+}
+.navi {
+  display: flex;
+  align-items: center;
+}
+.navi__item:not(:first-child) {
+  margin-left: 50px;
+}
+.header-contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contact-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-contact-list {
+  display: flex;
+}
+.contact-header-link__icon-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contact-header-link__icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+/*.contact-header-link__icon-envelope,
+.contact-header-link__icon-smartphone {
+  fill: currentColor;
+}*/
