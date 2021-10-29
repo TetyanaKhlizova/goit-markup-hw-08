@@ -140,7 +140,7 @@ img {
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .navi,
   .header-contact {
     display: none;
@@ -333,6 +333,12 @@ img {
 /* activity section*/
 .section-activity {
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 767px) {
+  .section-activity {
+    display: none;
+  }
 }
 
 .section-activity__title,
@@ -620,6 +626,9 @@ img {
   margin-left: 10px;
 }
 
+/*.subscription-form {
+  display: flex;
+}*/
 .subscription-form__field {
   width: 358px;
   border: none;
