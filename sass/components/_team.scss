@@ -2,10 +2,12 @@
 
 .team-section {
   background-color: var(--bkground-color-teamandbtn);
-  /*padding-top: 94px;
-  padding-bottom: 94px;*/
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team-card__surname {
@@ -26,10 +28,20 @@
   color: var(--secondary-color);
   text-align: center;
 }
-//@media screen and (max-width: 767px) {}
+
 .team-section__title {
+  margin-top: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  color: var(--primary-color);
   font-size: 28px;
   line-height: 1.18;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .team-section__item {
@@ -52,15 +64,11 @@
     margin-left: calc(-1 * var(--card-set-gap));
   }
 }
-/*.team-section__set {
-  display: flex;
-  margin-right: calc(-1 * var(--card-set-gap));
-}*/
-
 .team-card__content {
   padding: 30px 32px;
 }
 .social-list__item {
+  display: block;
   height: 44px;
   width: 44px;
   & + & {

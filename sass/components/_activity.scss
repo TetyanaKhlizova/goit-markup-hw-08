@@ -2,23 +2,24 @@
 
 .section-activity {
   padding-bottom: 94px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
 
-.section-activity__title,
-.team-section__title,
-.section-customers__title {
+.section-activity__title {
   margin-top: 0;
-  /*margin-bottom: 50px;*/
+  margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
   color: var(--primary-color);
+  margin-top: 0;
+  width: 100%;
+  font-size: 36px;
+  line-height: 1.17;
 }
-/*.activity-set {
+
+.activity-set {
   display: flex;
   margin-right: calc(-1 * var(--card-set-gap));
 }
@@ -27,7 +28,7 @@
     flex-basis: calc(100% / 3 - var(--card-set-gap));
     margin-right: var(--card-set-gap);
   }
-}*/
+}
 .activity-set__wrapper {
   position: relative;
 }
