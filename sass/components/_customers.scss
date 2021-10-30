@@ -11,6 +11,17 @@
     margin-right: var(--card-set-gap);
   }
 }*/
+@media screen and (max-width: 767px) {
+  .customers-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .section-customers__title {
+    font-size: 28px;
+    line-height: 1.18;
+  }
+}
+
 .section-customers__item {
   width: 170px;
   height: 92px;

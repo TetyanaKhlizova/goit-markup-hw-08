@@ -14,7 +14,8 @@ body {
   @media screen and (min-width: 1200px) {
     width: 1200px;
   }
-  //max-width: 1200px;
+  /*max-width: 1200px;*/
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -29,7 +30,7 @@ body {
 }
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .visually-hidden {
@@ -67,7 +68,7 @@ img {
 /* transitions for btn-hover*/
 .hero-btn,
 .btn-active,
-.subscribe-btn {
+.subscription-form__btn {
   transition: color var(--trans-duration) var(--transit-tim-function),
     background-color var(--trans-duration) var(--transit-tim-function),
     box-shadow var(--trans-duration) var(--transit-tim-function);

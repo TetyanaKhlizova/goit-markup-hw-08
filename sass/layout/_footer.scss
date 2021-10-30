@@ -40,7 +40,7 @@
 
 .loc-footer,
 .mail-footer {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 .social-list__footer-link {
   background-color: var(--footer-icon-bcgcolor);
@@ -63,7 +63,13 @@
   text-transform: uppercase;
   color: var(--title-color);
   margin: 0 0 20px 0;
+  text-align: center;
 }
+.contact-section-footer {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
 /*.contact-section-footer-general {
   display: flex;
   align-items: baseline;
@@ -74,16 +80,17 @@
 }*/
 .join-section {
   width: 206px;
-  margin: 0;
+  margin: 0 auto 60px;
 }
 /*.subscription-section {
   margin-left: auto;
 }*/
 .subscription-form__btn {
-  // display: flex;
+  display: flex;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 10px 28px;
-  margin-left: 12px;
+  //margin-left: 12px;
+  margin: 0 auto;
   &:hover,
   &:focus {
     background-color: var(--btn-color);
@@ -101,7 +108,9 @@
 }*/
 
 .subscription-form__field {
-  width: 358px;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto 20px;
   border: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
