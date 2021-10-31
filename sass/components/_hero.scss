@@ -58,7 +58,7 @@
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1200px;
+    max-width: 1600px;
     height: 600px;
     background-image: linear-gradient(
         to right,
@@ -105,4 +105,5 @@
 }
 .hero__container {
   text-align: center;
+  width: 696px;
 }
