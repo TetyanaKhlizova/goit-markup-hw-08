@@ -935,6 +935,11 @@ img {
 }*/
 /*main portfolio section*/
 /*botton section*/
+.portfolio-section {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .portfolio-btn-list__active {
   font-family: inherit;
   font-weight: 500;
@@ -957,20 +962,6 @@ img {
   box-shadow: var(--btn-shadow-porfolio);
 }
 
-/*.btn-all {
-  min-width: 73px;
-}
-.btn-web {
-  min-width: 128px;
-}
-.btn-app {
-  min-width: 145px;
-}
-.btn-design {
-  min-width: 103px;
-.btn-market {
-  min-width: 130px;
-}*/
 .portfolio-btn-list .btn-all.current {
   color: var(--title-color);
   background-color: var(--accent-color);
@@ -978,15 +969,20 @@ img {
 
 .portfolio-btn-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 
 .portfolio-btn-list__item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 /* cards section*/
+.portfolio-item {
+  text-align: center;
+}
+
 .portfolio-link__name {
   margin-top: 0;
   margin-bottom: 4px;
@@ -1017,18 +1013,40 @@ img {
   color: var(--secondary-color);
 }
 
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: calc(-1 * var(--card-set-gap));
-  margin-left: calc(-1 * var(--card-set-gap));
+@media screen and (min-width: 768px) {
+  .portfolio-btn-list {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  .portfolio-btn-list__item:not(:last-child) {
+    margin-right: 8px;
+    margin-bottom: 0;
+  }
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--card-set-gap));
+    margin-left: calc(-1 * var(--card-set-gap));
+  }
+  .portfolio-list .portfolio-item {
+    display: flex;
+    flex-basis: calc(100% / 2 - var(--card-set-gap));
+    margin-top: var(--card-set-gap);
+    margin-left: var(--card-set-gap);
+  }
 }
 
-.portfolio-list .portfolio-item {
-  display: flex;
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-top: var(--card-set-gap);
-  margin-left: var(--card-set-gap);
+@media screen and (min-width: 1200px) {
+  .portfolio-btn-list {
+    margin-bottom: 50px;
+  }
+  .portfolio-list .portfolio-item {
+    display: flex;
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+    margin-top: var(--card-set-gap);
+    margin-left: var(--card-set-gap);
+  }
 }
 
 .portfolio-link__thumb {
