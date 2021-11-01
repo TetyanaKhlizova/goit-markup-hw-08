@@ -74,7 +74,7 @@ body {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -884,7 +884,7 @@ img {
   .contact-section-footer-general {
     display: flex;
     align-items: baseline;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .section-footer-general {
     justify-content: space-between;
@@ -895,7 +895,7 @@ img {
     margin-right: auto;
   }
   .join-section {
-    margin-left: 50px;
+    margin-left: 70px;
   }
   .subscription-form {
     display: flex;
@@ -1026,6 +1026,7 @@ img {
   .portfolio-list {
     display: flex;
     flex-wrap: wrap;
+    align-items: stretch;
     margin-top: calc(-1 * var(--card-set-gap));
     margin-left: calc(-1 * var(--card-set-gap));
   }
