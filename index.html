@@ -17,7 +17,7 @@
 </head>
 <body>
     <!--Шапка сайта-->
-    <!--<header class="page-header">
+    <header class="page-header">
         <div class="container header-container">
         <nav class="header-nav">
         <a class="logo logo-header link" lang="en" href="./index.html">Web<span class="logo-header__studio">Studio</span></a>
@@ -37,11 +37,12 @@
             </svg>+38 096 111 11 11</a></li>
         </ul>
         </div>
-        <button type= "button" class="menu-btn menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <button type="button" class="menu-btn">H</button>
+        <!--<button type= "button" class="menu-btn menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
             <svg class="menu-btn__svg"><use href="./images/sprite.svg#icon-menu_24px"></use>
-            </svg> </button>
+            </svg> </button>-->
     </div>   
-    </header>-->
+    </header>
     <!--Уникальный контент страницы-->
 <main>
     <section>
@@ -100,20 +101,31 @@
         <ul class="activity-set list">
             <li class="activity-set__item">
                 <div class="activity-set__wrapper">
-                <img  src="./images/box1.jpg" alt="Печать" width="370">
+                    <picture>
+                        <source srcset ="./images/desk1-activity-1x-min.jpg 1x, ./images/desk1-activity-2x-min.jpg 2x" media="(min-width: 1200px)"/>
+                <img  src="./images/desk1-activity-1x-min.jpg" alt="Печать" width="370"></picture>
                 <p class="activity-set__text">Десктопные приложения</p>
                 </div>
             </li>
             <li class="activity-set__item">
                 <div class="activity-set__wrapper">
-                <img src="./images/box2.jpg" alt="Смартфон" width="370">
+                <picture>
+                    <source srcset="./images/desk2-activity-1x-min.jpg 1x, ./images/desk2-activity-2x-min.jpg 2x"
+                        media="(min-width: 1200px)"/>
+                    <img src="./images/desk2-activity-1x-min.jpg" alt="Смартфон" width="370">
+                </picture>
                 <p class="activity-set__text">Мобильные приложения</p>
                 </div>
             </li>
             <li class="activity-set__item">
                 <div class="activity-set__wrapper">
-                <img src="./images/box3.jpg" alt="Стилус" width="370">
-                <p class="activity-set__text">Дизайнерские решения</p>
+                    <picture>
+                    <source srcset="./images/desk3-activity-1x-min.jpg 1x, ./images/desk3-activity-2x-min.jpg 2x"
+                        media="(min-width: 1200px)"/>
+                    <img src="./images/desk3-activity-1x-min.jpg" alt="Стилус" width="370">
+                    </picture>
+               
+                    <p class="activity-set__text">Дизайнерские решения</p>
                 </div>
             </li>
         </ul>
@@ -126,8 +138,13 @@
         <ul class="team-section__set list">
             <li class="team-section__item">
                 <div class="team-card">
-                <img class="team-card__img" src="./images/teamcard1.jpg" alt="Дизайнер" width="270">
-                <div class="team-card__content">
+                    <picture class="team-card__img">
+                        <source srcset="./images/desk1-team-1x-min.jpg 1x, ./images/desk1-team-2x-min.jpg 2x" media="(min-width: 1200px)" />                        
+                            <source srcset="./images/tablet1-team-1x-min.jpg 1x, ./images/tablet1-team-2x-min.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/mobile1-team-1x.jpg 1x, ./images/mobile1-team-2x.jpg 2x" media="(min-width: 480px)"/>                                        
+                        <img src="./images/mobile1-team-1x.jpg" alt="Дизайнер" width="450" />
+                    </picture>
+                      <div class="team-card__content">
                 <h3 class="team-card__surname">Игорь Демьяненко</h3>
                 <p class="team-card__position" lang="en">Product Designer</p>
                 <ul class="social-list team-social list">
@@ -157,8 +174,16 @@
             </li>
             <li class="team-section__item">
                 <div class="team-card">
-                <img class="team-card__img" src="./images/teamcard2.jpg" alt="Разработчик" width="270">
-                <div class="team-card__content">
+                    <picture class="team-card__img">
+                        <source srcset="./images/desk2-team-1x-min.jpg 1x, ./images/desk2-team-2x-min.jpg 2x" media="(min-width: 1200px)"
+                             />
+                        <source srcset="./images/tablet2-team-1x-min.jpg 1x, ./images/tablet2-team-2x-min.jpg 2x" media="(min-width: 768px)"
+                             />
+                        <source srcset="./images/mobile2-team-1x.jpg 1x, ./images/mobile2-team-2x.jpg 2x" media="(min-width: 480px)"
+                             />
+                        <img src="./images/mobile2-team-1x.jpg" alt="Разработчик" width="450" />
+                    </picture>
+                                <div class="team-card__content">
                 <h3 class="team-card__surname">Ольга Репина</h3>
                 <p class="team-card__position" lang="en">Frontend Developer</p>
                 <ul class="social-list team-social list">
@@ -188,7 +213,16 @@
             </li>
             <li class="team-section__item">
                 <div class="team-card">
-                <img class="team-card__img" src="./images/teamcard3.jpg" alt="Маркетолог" width="270">
+                    <picture class="team-card__img">
+                        <source srcset="./images/desk3-team-1x-min.jpg 1x, ./images/desk3-team-2x-min.jpg 2x" media="(min-width: 1200px)"
+                             />
+                        <source srcset="./images/tablet3-team-1x-min.jpg 1x, ./images/tablet3-team-2x-min.jpg 2x" media="(min-width: 768px)"
+                             />
+                        <source srcset="./images/mobile3-team-1x.jpg 1x, ./images/mobile3-team-2x.jpg 2x" media="(min-width: 480px)"
+                             />
+                        <img src="./images/mobile3-team-1x.jpg" alt="Маркетолог" width="450" />
+                    </picture>
+                
                 <div class="team-card__content">
                 <h3 class="team-card__surname">Николай Тарасов</h3>
                 <p class="team-card__position" lang="en">Marketing</p>                
@@ -219,8 +253,16 @@
             </li>
             <li class="team-section__item">
                 <div class="team-card">
-                <img class="team-card__img" src="./images/teamcard4.jpg" alt="Дизайнер интерфейсов" width="270">
-                <div class="team-card__content">
+                    <picture class="team-card__img">
+                        <source srcset="./images/desk4-team-1x-min.jpg 1x, ./images/desk4-team-2x-min.jpg 2x" media="(min-width: 1200px)"
+                             />
+                        <source srcset="./images/tablet4-team-1x-min.jpg 1x, ./images/tablet4-team-2x-min.jpg 2x" media="(min-width: 768px)"
+                             />
+                        <source srcset="./images/mobile4-team-1x.jpg 1x, ./images/mobile4-team-2x.jpg 2x" media="(min-width: 480px)"
+                             />
+                        <img src="./images/mobile4-team-1x.jpg" alt="Дизайнер интерфейса" width="450" />
+                    </picture>
+                                <div class="team-card__content">
                 <h3 class="team-card__surname">Михаил Ермаков</h3>
                 <p class="team-card__position" lang="en">UI Designer</p>
                 <ul class="social-list team-social list">
@@ -364,6 +406,7 @@
         <svg width="40" height="40" > <use href="./images/sprite.svg#icon-close_40"></use>
         </svg>
     </button>
+</div>
 
  <div class="backdrop is-hidden" data-modal>
   <div class="modal">
@@ -407,9 +450,9 @@
 </div>   
  </div>
 <script src="./js/modal.js"></script> 
-<!--<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
-<script defer src="js/mobile-menu.js"></script>-->
+<script defer src="js/mobile-menu.js"></script>
 </body>
 </html>

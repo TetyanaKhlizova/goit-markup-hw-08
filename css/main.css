@@ -585,7 +585,6 @@ img {
 }
 
 .team-section__item {
-  width: 100%;
   margin-bottom: var(--card-set-gap);
 }
 
@@ -981,6 +980,7 @@ img {
 /* cards section*/
 .portfolio-item {
   text-align: left;
+  margin-bottom: 30px;
 }
 
 .portfolio-link__name {
@@ -1035,6 +1035,7 @@ img {
     flex-basis: calc(100% / 2 - var(--card-set-gap));
     margin-top: var(--card-set-gap);
     margin-left: var(--card-set-gap);
+    margin-bottom: 0;
   }
 }
 
@@ -1081,6 +1082,15 @@ img {
 .portfolio-link:hover .portfolio-link__text,
 .portfolio-link:focus .portfolio-link__text {
   transform: translateY(0);
+}
+
+.portfolio-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-link__thumb {
+  flex-grow: 1;
 }
 
 /* modal window*/

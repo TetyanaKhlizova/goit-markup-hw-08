@@ -50,6 +50,7 @@
 /* cards section*/
 .portfolio-item {
   text-align: left;
+  margin-bottom: 30px;
 }
 
 .portfolio-link__name {
@@ -105,6 +106,7 @@
       flex-basis: calc(100% / 2 - var(--card-set-gap));
       margin-top: var(--card-set-gap);
       margin-left: var(--card-set-gap);
+      margin-bottom: 0;
     }
   }
 }
@@ -150,4 +152,11 @@
   .portfolio-link:focus & {
     transform: translateY(0);
   }
+}
+.portfolio-link {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-link__thumb {
+  flex-grow: 1;
 }
