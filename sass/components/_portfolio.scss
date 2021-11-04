@@ -151,6 +151,10 @@
   .portfolio-link:hover &,
   .portfolio-link:focus & {
     transform: translateY(0);
+    @media screen and (max-width: 480px) {
+      overflow-x: scroll;
+      overflow-y: scroll;
+    }
   }
 }
 .portfolio-link {

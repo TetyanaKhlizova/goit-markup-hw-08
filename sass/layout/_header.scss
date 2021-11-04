@@ -145,6 +145,54 @@
     fill: currentColor;
   }
 }
+@media screen and (min-width: 1200px) {
+  .logo-header {
+    margin-right: 93px;
+  }
+  .header-nav {
+    display: flex;
+    //align-items: center;
+  }
+  .navi {
+    display: flex;
+    align-items: center;
+  }
+  .navi__item:not(:first-child) {
+    margin-left: 50px;
+  }
+  .header-contact {
+    display: flex;
+    margin-left: auto;
+  }
+  .navi__active,
+  .contact-header-link {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-contact-list__item:not(:last-child) {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+
+  .header-contact-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-header-link__icon-smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  .contact-header-link__icon-envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
 
 //это не нужно
 //.contact-header-link__icon-envelope,
