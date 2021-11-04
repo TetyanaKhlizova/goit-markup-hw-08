@@ -1106,6 +1106,14 @@ input:-webkit-autofill:active {
   transform: translateY(0);
 }
 
+@media screen and (max-width: 480px) {
+  .portfolio-link:hover .portfolio-link__text,
+  .portfolio-link:focus .portfolio-link__text {
+    overflow-x: scroll;
+    overflow-y: scroll;
+  }
+}
+
 .portfolio-link {
   display: flex;
   flex-direction: column;
