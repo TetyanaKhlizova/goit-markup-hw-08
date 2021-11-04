@@ -93,6 +93,15 @@
   letter-spacing: 0.02em;
   color: var(--secondary-color);
 }
+@media screen and (max-width: 479px) {
+  .mobile-link-mail,
+  .mobile-link-tel,
+  .link-item {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+  }
+}
 .mobile-content {
   height: 100%;
   display: flex;
