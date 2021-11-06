@@ -46,8 +46,6 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition: color var(--trans-duration) var(--transit-tim-function);
 }
 .navi__active:hover,
@@ -120,8 +118,15 @@
   }
 
   .header-contact-list__item:not(:last-child) {
-    //margin-right: 50px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+  }
+  .contact-header-link-mail {
+    padding-top: 21px;
+    padding-bottom: 0;
+  }
+  .contact-header-link-tel {
+    padding-top: 0;
+    padding-bottom: 20px;
   }
   //.header-contact-list {
   //display: flex;}
@@ -168,6 +173,8 @@
   .contact-header-link {
     display: flex;
     align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 
   .header-contact-list__item:not(:last-child) {

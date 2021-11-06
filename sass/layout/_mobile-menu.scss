@@ -52,11 +52,12 @@
     fill: var(--accent-color);
   }
 }
-.mobile-list,
+/*.mobile-list,
 .mobile-contact-list {
   margin: 0;
   padding: 0;
-}
+}*/
+
 .link-item {
   display: inline-block;
   font-style: normal;
@@ -71,6 +72,9 @@
   }
 }
 .mobile-list__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mobile-list {
   margin-bottom: 32px;
 }
 .menu-container .mobile-link-studio.current,

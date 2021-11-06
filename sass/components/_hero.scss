@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 480px;
+  max-width: 768px;
   height: 400px;
   margin: 0 auto;
   background-color: var(--bkground-color-title);
@@ -34,7 +34,7 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
+    max-width: 1199px;
     height: 400px;
     background-image: linear-gradient(
         to right,
