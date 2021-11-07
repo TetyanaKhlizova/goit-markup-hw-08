@@ -168,8 +168,6 @@ input:-webkit-autofill:active {
 
 .navi__active,
 .contact-header-link {
-  /*display: flex;
-  align-items: center;*/
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -249,6 +247,8 @@ input:-webkit-autofill:active {
   .navi__active {
     display: flex;
     align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
   .header-contact-list__item:not(:last-child) {
     margin-bottom: 10px;
@@ -327,7 +327,7 @@ input:-webkit-autofill:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 768px;
+  max-width: 767px;
   height: 400px;
   margin: 0 auto;
   background-color: var(--bkground-color-title);
@@ -378,8 +378,15 @@ input:-webkit-autofill:active {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--title-color);
-  font-size: 26px;
+  font-size: 6vw;
   line-height: 1.62;
+}
+
+@media screen and (min-width: 400px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.62;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -400,7 +407,13 @@ input:-webkit-autofill:active {
 
 .hero__container {
   text-align: center;
-  width: 696px;
+  width: 726px;
+}
+
+@media screen and (max-width: 1199px) {
+  .hero__container {
+    max-width: 390px;
+  }
 }
 
 /* peculiarities section*/
@@ -842,7 +855,11 @@ input:-webkit-autofill:active {
 
 .join-section {
   width: 206px;
-  margin: 0 auto 60px;
+  margin: 0 auto;
+}
+
+.section-footer-general {
+  margin-bottom: 60px;
 }
 
 .subscription-form__field {
@@ -872,7 +889,6 @@ input:-webkit-autofill:active {
     display: flex;
     align-items: baseline;
     justify-content: space-around;
-    margin-bottom: 60px;
   }
   .contact-section-footer {
     margin-bottom: 0;
@@ -1086,17 +1102,17 @@ input:-webkit-autofill:active {
   height: 100%;
 }
 
-.portfolio-link:hover .portfolio-link__text,
-.portfolio-link:focus .portfolio-link__text {
-  transform: translateY(0);
-}
-
-@media screen and (max-width: 480px) {
-  .portfolio-link:hover .portfolio-link__text,
-  .portfolio-link:focus .portfolio-link__text {
+@media screen and (max-width: 479px) {
+  .portfolio-link__text {
+    padding: 25px 15px;
     overflow-x: scroll;
     overflow-y: scroll;
   }
+}
+
+.portfolio-link:hover .portfolio-link__text,
+.portfolio-link:focus .portfolio-link__text {
+  transform: translateY(0);
 }
 
 .portfolio-link {
@@ -1190,6 +1206,13 @@ input:-webkit-autofill:active {
   line-height: 1.15;
   text-align: center;
   color: var(--primary-color);
+}
+
+@media screen and (max-width: 479px) {
+  .modal__title {
+    font-size: 4.5vw;
+    line-height: 1.3;
+  }
 }
 
 .modal-field__input {
@@ -1316,6 +1339,7 @@ input:-webkit-autofill:active {
     max-width: 16px;
     max-height: 15px;
     display: inline-block;
+    vertical-align: middle;
   }
 }
 
@@ -1325,7 +1349,6 @@ input:-webkit-autofill:active {
 }
 
 .modal-check:checked + .checkbox span {
-  display: flex;
   align-items: center;
   justify-content: center;
   height: 15px;
@@ -1471,8 +1494,8 @@ input:-webkit-autofill:active {
   .mobile-link-tel,
   .link-item {
     font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+    font-size: 7vw;
+    line-height: 1.05;
   }
 }
 

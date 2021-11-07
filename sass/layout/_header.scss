@@ -38,8 +38,6 @@
 
 .navi__active,
 .contact-header-link {
-  /*display: flex;
-  align-items: center;*/
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -115,6 +113,8 @@
   {
     display: flex;
     align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 
   .header-contact-list__item:not(:last-child) {

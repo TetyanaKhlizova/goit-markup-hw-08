@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 768px;
+  max-width: 767px;
   height: 400px;
   margin: 0 auto;
   background-color: var(--bkground-color-title);
@@ -87,8 +87,12 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--title-color);
-  font-size: 26px;
+  font-size: 6vw;
   line-height: 1.62;
+  @media screen and (min-width: 400px) {
+    font-size: 26px;
+    line-height: 1.62;
+  }
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
@@ -105,5 +109,8 @@
 }
 .hero__container {
   text-align: center;
-  width: 696px;
+  @media screen and (max-width: 1199px) {
+    max-width: 390px;
+  }
+  width: 726px;
 }
